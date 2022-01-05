@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\theme",
-    "\\theme\\lms\\templates",
-    "\\theme\\lms\\templates\\static_templates"
+    "\\theme\\cms",
+    "\\theme\\cms\\templates",
+    "\\theme\\cms\\templates\\widgets",
+    "\\theme\\lms",
+    "\\theme\\lms\\templates"
   ],
+  "SelectedNode": "\\theme\\cms\\templates\\widgets\\footer.html",
   "PreviewInSolutionExplorer": false
 }
