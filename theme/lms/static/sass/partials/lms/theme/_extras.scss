@@ -69,8 +69,9 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
 
 /////////////////// Home page
 .home header {
-  box-shadow: none;
-  background-color: #fff;
+    box-shadow: none;
+    background-color: #fff;
+    background-image: url(/static/LPTheme/images/header-bg.jpg);
 }
 
 .home > header .title {
