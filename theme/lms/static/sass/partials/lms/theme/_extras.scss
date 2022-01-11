@@ -34,6 +34,10 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
   }
   min-height: calc(100vh - #{$header-height + $content-padding-top + $content-padding-bottom + $footer-height}); // sticky footer
 }
+#content.content-wrapper {
+    padding-top: 0px !important;
+    margin-top: 66px !important;
+}
 
 ////////////////// Fonts
 @import "fonts";
@@ -66,7 +70,10 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
         display: none;
     }
 }
-
+.global-header .nav-links .secondary a.sign-in-btn, .global-header .nav-links .secondary .nav-item a.shopping-cart {
+    border: 2px solid #0A3041 !important;
+    background-color: #0a3055 !important;
+}
 /////////////////// Home page
 .home header {
     box-shadow: none;
@@ -76,18 +83,24 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
 
 .home > header .title {
   box-shadow: none;
+  background: none !important;
+}
+.home > header .title .course-search .search-button {
+    border: 2px solid #0A3041 !important;
+    background: #0a3055 !important;
 }
 
 .home > header .outer-wrapper {
-  padding: 0;
+    padding: 0;
 }
 
 .home > header .title > .heading-group {
   width: 100%;
   text-align: center;
 }
-.home > header .title > .heading-group h1 {
-  text-align: center;
+.home > header .title > .heading-group h1, .home > header .title > .heading-group p {
+    text-align: center;
+    color: #fff !important;
 }
 
 .animation-home-header-pop-up, .home > header .outer-wrapper {
@@ -107,13 +120,17 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
     // Fix right margin
     &:nth-child(4n), &:last-child {
       margin-right: 20px;
+      width: 20% !important;
     }
   }
 }
-
+.courses-container .courses .course .course-image .cover-image .learn-more {
+    border-color: #0a3055 !important;
+    background: #0a3055 !important;
+}
 ////////////////// User dashboard /dashboard
 .dashboard .main-container {
-  padding: initial;
+    padding: initial;
 }
 
 ////////////////// "View this course as staff/learner/..."
