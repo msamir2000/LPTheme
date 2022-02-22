@@ -37,6 +37,8 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
 #content.content-wrapper {
     padding-top: 0px !important;
     margin-top: 66px !important;
+    padding-left:0px !important;
+    padding-right: 0px !important;
 }
 
 ////////////////// Fonts
@@ -78,12 +80,17 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
 .home header {
     box-shadow: none;
     background-color: #fff;
-    background-image: url(/static/LPTheme/images/header-bg.jpg);
 }
-
+.home > header {
+    box-shadow: none;
+    background-color: #fff;
+    background-image: url(/static/LPTheme/images/banner.svg);
+    height: 420px;
+}
 .home > header .title {
-  box-shadow: none;
-  background: none !important;
+    box-shadow: none;
+    background: none !important;
+    margin-left: 0px !important;
 }
 .home > header .title .course-search .search-button {
     border: 2px solid #0A3041 !important;
@@ -92,6 +99,7 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
 
 .home > header .outer-wrapper {
     padding: 0;
+    margin-top: 95px !important;
 }
 
 .home > header .title > .heading-group {
@@ -99,7 +107,7 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
   text-align: center;
 }
 .home > header .title > .heading-group h1, .home > header .title > .heading-group p {
-    text-align: center;
+    text-align: left;
     color: #fff !important;
 }
 
@@ -117,6 +125,7 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
   justify-content: center;
   .courses-listing-item {
     margin: 0 20px 30px 20px;
+    width: 20%;
     // Fix right margin
     &:nth-child(4n), &:last-child {
       margin-right: 20px;
