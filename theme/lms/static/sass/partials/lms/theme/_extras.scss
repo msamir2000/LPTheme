@@ -84,7 +84,7 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
 .home > header {
     box-shadow: none;
     background-color: #fff;
-    background-image: url(/static/LPTheme/images/banner.svg);
+    background-image: url(/static/LPTheme/images/header-bg.jpg);
     height: 420px;
 }
 .home > header .title {
@@ -133,6 +133,15 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
     }
   }
 }
+div#my-courses {
+    padding-left: 20px;
+
+    h2.header-courses {
+        padding-top: 15px;
+        font-size: 25px !important;
+    }
+}
+
 .courses-container .courses .course .course-image .cover-image .learn-more {
     border-color: #0a3055 !important;
     background: #0a3055 !important;
@@ -216,24 +225,34 @@ nav.wrapper-preview-menu {
 
 /////////////////// Footer
 .wrapper-footer {
-  box-shadow: none;
-  padding: 25px 40px;
+    box-shadow: none;
+    padding: 25px 40px;
+    background: #d3d3d3;
+    color: #0a3055 !important;
 
-  .wrapper-logo {
-      display: none;
-  }
-  .copyright {
-      display: none;
-  }
-  .nav-legal ul {
-      display: inline-block;
-  }
-  footer#footer-openedx .footer-about-openedx {
-      a {
-          float: none;
-      }
-      p {
-          text-align: right;
-      }
-  }
+    .wrapper-logo {
+        display: none;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .nav-legal ul {
+        display: inline-block;
+    }
+
+    a {
+        color: #0a3055 !important;
+    }
+
+    footer#footer-openedx .footer-about-openedx {
+        a {
+            float: none;
+        }
+
+        p {
+            text-align: right;
+        }
+    }
 }
