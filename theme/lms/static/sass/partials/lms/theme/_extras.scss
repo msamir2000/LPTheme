@@ -46,14 +46,15 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
 
 /////////////////// Register/Sign in header
 header.global-header {
-  @include media-breakpoint-up(lg) {
-    position: fixed;
-    top: 0;
-    z-index: 200; // necessary to keep the header on top of other elements
-    overflow: visible;  // fix for Safari
-  }
-  //background-color: #4c61bf;
-  box-shadow: none;
+    @include media-breakpoint-up(lg) {
+        position: fixed;
+        top: 0;
+        z-index: 200; // necessary to keep the header on top of other elements
+        overflow: visible; // fix for Safari
+    }
+    //background-color: #4c61bf;
+    border-bottom: 2px solid #0A3041;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 10%) !important;
 }
 
 header.global-header .nav-links .secondary .user-image-frame {
@@ -63,7 +64,10 @@ header.global-header .nav-links .secondary .user-image-frame {
 header.global-header .nav-links .secondary .dropdown-user-menu {
   position: fixed;
 }
-
+.global-header .nav-links .main .nav-tab a:hover {
+    cursor: pointer;
+    border-bottom-color: #0a3055 !important;
+}
 /////////////////// Sign in form
 
 .login-register .form-field {
@@ -161,36 +165,49 @@ nav.wrapper-preview-menu {
 
 ////////////////// Course about page
 .course-info header.course-profile {
-  background: #fff;
-  box-shadow: none;
-  border-bottom: none;
+    background: #fff;
+    box-shadow: 0px 2px 5px darkgrey;
+    border-bottom: none;
 
-  .intro-inner-wrapper {
-    border: none;
-    box-shadow: none;
-  }
+    .intro-inner-wrapper {
+        border: none;
+        box-shadow: none;
+    }
 }
 
 .course-info {
-  .container {
-    padding-bottom: 0;
-  }
-  .details .inner-wrapper > section {
-    margin-bottom: 0;
-  }
-  header.course-profile .intro-inner-wrapper .intro .main-cta {
-    span.register {
-      @extend %t-copy-base;
-      padding: 10px 0;
+    .container {
+        padding-bottom: 0;
     }
-    strong {
-      background-image: none;
-      border-radius: 0;
-      &:hover:not(:disabled) {
-        background-image: none;
-      }
+
+    .course-info .course-sidebar {
+        background-color: #edf5ff;
+        box-shadow: 0px 1px 6px darkgrey !important;
     }
-  }
+
+    .details .inner-wrapper > section {
+        margin-bottom: 0;
+    }
+
+    header.course-profile .intro-inner-wrapper .intro .main-cta {
+        span.register {
+            @extend %t-copy-base;
+            padding: 10px 0;
+        }
+
+        strong {
+            background-image: none;
+            border-radius: 0;
+            background-color: #0a3055 !important;
+            border: 1px solid #0A3041 !important;
+            border-bottom: 1px solid #0A3041 !important;
+
+            &:hover:not(:disabled) {
+                background-image: none;
+                background-color: #135370 !important;
+            }
+        }
+    }
 }
 
 
@@ -226,7 +243,7 @@ nav.wrapper-preview-menu {
 /////////////////// Footer
 .wrapper-footer {
     box-shadow: none;
-    padding: 25px 40px;
+    padding: 0px !important;
     background: #d3d3d3;
     color: #0a3055 !important;
 
@@ -244,6 +261,16 @@ nav.wrapper-preview-menu {
 
     a {
         color: #0a3055 !important;
+    }
+
+    footer#footer-openedx {
+        padding: 10px 25px;
+    }
+
+    .footer-extra {
+        padding: 20px 25px;
+        background-color: #0a3055;
+        color: #fff;
     }
 
     footer#footer-openedx .footer-about-openedx {
