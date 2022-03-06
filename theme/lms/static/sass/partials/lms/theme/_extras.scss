@@ -190,6 +190,12 @@ nav.wrapper-preview-menu {
     }
 
     header.course-profile .intro-inner-wrapper .intro .main-cta {
+        a.register {
+            background-color: #0a3055 !important;
+            border: 1px solid #0A3041 !important;
+            border-bottom: 1px solid #0A3041 !important;
+        }
+
         span.register {
             @extend %t-copy-base;
             padding: 10px 0;
