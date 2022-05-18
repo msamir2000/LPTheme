@@ -2,12 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\theme",
-    "\\theme\\cms",
-    "\\theme\\cms\\templates",
-    "\\theme\\cms\\templates\\widgets",
     "\\theme\\lms",
-    "\\theme\\lms\\templates"
+    "\\theme\\lms\\static",
+    "\\theme\\lms\\static\\sass",
+    "\\theme\\lms\\static\\sass\\partials",
+    "\\theme\\lms\\static\\sass\\partials\\lms",
+    "\\theme\\lms\\static\\sass\\partials\\lms\\theme",
+    "\\theme\\lms\\static\\templates",
+    "\\theme\\lms\\static\\templates\\static_templates"
   ],
-  "SelectedNode": "\\theme\\cms\\templates\\widgets\\footer.html",
+  "SelectedNode": "\\theme\\lms\\static\\templates\\index_overlay.html",
   "PreviewInSolutionExplorer": false
 }
