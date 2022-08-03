@@ -25,17 +25,17 @@ ABOUT = load_about()
 
 
 setup(
-    name="LPTheme",
+    name="tutor-LPTheme",
     version=ABOUT["__version__"],
-    url="https://github.com/msamir2000/LPTheme",
+    url="https://github.com/msamir2000/LPTheme/",
     project_urls={
-        "Code": "https://github.com/msamir2000/LPTheme",
-        "Issue tracker": "https://github.com/overhangio/tutor-indigo/issues",
+        "Code": "https://github.com/msamir2000/LPTheme/",
+        "Issue tracker": "https://github.com/msamir2000/LPTheme/issues",
         "Community": "https://discuss.overhang.io",
     },
     license="AGPLv3",
     author="LP",
-    description="LPTheme theme plugin for Tutor",
+    description="LP theme plugin for Tutor",
     long_description=load_readme(),
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
